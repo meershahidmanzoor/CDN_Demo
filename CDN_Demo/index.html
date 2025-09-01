@@ -1,13 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CDN Demo Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shahid Manzoor - Resume (HTML)</title>
+  <style>
+    :root{--fg:#111;--muted:#555;--rule:#e5e7eb}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--fg);margin:0;padding:32px;line-height:1.45}
+    header{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+    h1{font-size:28px;margin:0 0 2px 0}
+    .subtitle{color:var(--muted);font-weight:600}
+    .contact{display:flex;flex-wrap:wrap;gap:16px;color:var(--muted)}
+    hr{border:0;border-top:1px solid var(--rule);margin:18px 0}
+    section{margin-bottom:18px}
+    h2{font-size:18px;margin:0 0 8px 0;border-bottom:1px solid var(--rule);padding-bottom:4px}
+    h3{font-size:16px;margin:8px 0 4px 0}
+    .meta{color:var(--muted);font-size:0.95rem;margin-bottom:4px}
+    ul{margin:6px 0 6px 20px}
+    li{margin:2px 0}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media print{body{padding:0} a{color:inherit;text-decoration:none} .no-print{display:none}}
+  </style>
 </head>
 <body>
-    <h1>Welcome to My CDN-Powered Website!</h1>
-    <p>This is a simple static site to demo CDN benefits.</p>
-    <img src="https://via.placeholder.com/800x400" alt="Sample Image"> <!-- Add an image for caching demo -->
+  <header>
+    <h1>Shahid Manzoor</h1>
+    <div class="subtitle">Associate Developer</div>
+    <div class="contact">
+      <span>+917006843435</span>
+      <span>meershahid543210@gmail.com</span>
+      <span>Bangalore, Karnataka-560066</span>
+      <span>LinkedIn</span>
+      <span>Github</span>
+    </div>
+  </header>
+  <hr/>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <h3>Associate developer, GalaxE Solutions-an Endava Company Bangalore</h3>
+    <div class="meta">Aug 2024 – present &nbsp;|&nbsp; Bangalore, India</div>
+    <div class="meta"><strong>Project:</strong> Health Service Provider App</div>
+    <p>Developed a healthcare management platform supporting Patients, Doctors, and Admins, enabling seamless appointment scheduling, medical history management, and secure report sharing.</p>
+    <ul>
+      <li>Implemented appointment booking, rescheduling, and cancellation for doctors and labs, enhancing user convenience.</li>
+      <li>Developed functionality for lab report uploads and downloads, ensuring secure medical data access.</li>
+      <li>Built search features for doctors and lab appointments, improving accessibility and efficiency.</li>
+      <li>Integrated SMS and email alerts, providing real-time notifications for appointments and reports.</li>
+      <li>Implemented automated reminders, reducing missed appointments and enhancing patient engagement.</li>
+      <li>Developed patient demographics and medical history management, ensuring comprehensive healthcare records.</li>
+      <li>Integrated feedback mechanisms, enabling users to review healthcare services for continuous improvement.</li>
+    </ul>
+    <p><strong>Key Contributions:</strong></p>
+    <ul>
+      <li>Developed and optimized RESTful APIs using Spring Boot, Spring MVC, and JPA, ensuring a scalable and maintainable application architecture.</li>
+      <li>Implemented Spring Security for authentication and authorization, strengthening data protection and access control.</li>
+      <li>Optimized MS SQL database queries, reducing execution time and enhancing system performance.</li>
+      <li>Designed and developed frontend components using HTML, CSS, and React.js, improving UI responsiveness and user experience.</li>
+      <li>Implemented comprehensive unit and integration testing with JUnit and Mockito, increasing test coverage and ensuring application reliability.</li>
+      <li>Managed project dependencies and builds using Maven, streamlining version control and deployment.</li>
+      <li>Designed robust logging and monitoring mechanisms, reducing debugging time and improving system observability.</li>
+      <li>Collaborated with stakeholders to analyze healthcare workflows, ensuring software compliance with industry standards and user needs.</li>
+      <li>Collaborated in Agile teams, working with cross-functional stakeholders to deliver a high-traffic, enterprise-grade healthcare platform.</li>
+    </ul>
+
+    <h3>Software Engineer Intern, GalaxE Solutions Bangalore</h3>
+    <div class="meta">Feb 2024 – Apr 2024 &nbsp;|&nbsp; Bangalore, India</div>
+    <p><strong>Projects:</strong> Gx Launchpad Web Application (HTML, CSS, JavaScript)</p>
+    <ul>
+      <li>Developed a responsive web platform with authentication, assignments, and quizzes.</li>
+      <li>Used HTML, CSS, and JavaScript to enhance UI/UX, improving page load speed.</li>
+    </ul>
+    <p><strong>Food Delivery Management CLI (Java, Eclipse)</strong></p>
+    <ul>
+      <li>Implemented Core Java (OOP, Collections, Multithreading) for efficient order processing.</li>
+      <li>Optimized database queries to improve performance and reduce execution time.</li>
+    </ul>
+
+    <h3>Martian Summer Intern, Persistent Systems</h3>
+    <div class="meta">Jun 2023 – Aug 2023 &nbsp;|&nbsp; virtual, india</div>
+    <ul>
+      <li>Completed an intensive training program focused on Core Java, Operating Systems (OS), Data Structures &amp; Algorithms (DSA), and Database Management Systems (DBMS).</li>
+      <li>Gained hands-on experience with problem-solving in Java, optimizing data structures, and implementing efficient algorithms.</li>
+      <li>Worked with VS Code and database management tools to practice SQL queries and system design concepts.</li>
+    </ul>
+
+    <h3>Android Developer Intern, Oasis Infobyte</h3>
+    <div class="meta">Nov 2022 – Dec 2022 &nbsp;|&nbsp; Virtual, India</div>
+    <ul>
+      <li>Developed Android applications, including a Unit Converter, Calculator, and To-Do List, focusing on intuitive UI/UX and seamless functionality.</li>
+      <li>Utilized Java, SQLite, and XML to build robust, data-driven applications with local storage capabilities.</li>
+      <li>Implemented CRUD operations in SQLite, enabling efficient data storage and retrieval.</li>
+      <li>Worked with Android Studio for development and GitHub for version control, ensuring code maintainability and collaboration.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="two-col">
+      <div>
+        <h3>Walchand Institute of technology Solapur-413006, BTech-CSE</h3>
+        <div class="meta">2021 – 2024 &nbsp;|&nbsp; Solapur, India</div>
+      </div>
+      <div>
+        <ul>
+          <li>CGPA: 9.69</li>
+          <li>Aggregate Percentage: 86.22</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> Java (Core &amp; Advanced), Python (Basics), SQL</li>
+      <li><strong>Data Structures &amp; Algorithms:</strong> Arrays, Stack, Queue, LinkedList, Trees, Maps, Searching, Sorting</li>
+      <li><strong>Backend Development:</strong> Spring Boot, Spring MVC, REST API, JPA, Servlets, JSP</li>
+      <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React.js</li>
+      <li><strong>Database Management:</strong> MS SQL, SQLite</li>
+      <li><strong>Mobile Development:</strong> Android Development (Java, XML, SQLite)</li>
+      <li><strong>Software Engineering &amp; System Concepts:</strong> Operating Systems, Software Engineering, Multithreading, Java 8</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <p><strong>Women’s Safety Android Application – SafeStree (Java, SQLite, APIs, Google Maps API, Android Studio)</strong></p>
+    <p><em>Tools and Technologies : Android Studio , Java, Local DataBase, API</em></p>
+    <ul>
+      <li>Developed SafeStree, a feature-rich Android application designed for women's safety and emergency assistance.</li>
+      <li>Implemented SOS alerts allowing users to send instant emergency notifications (Call, SMS, and last known location) to predefined contacts.</li>
+      <li>Integrated a motion-detection (shake-to-alert) feature, enabling users to trigger emergency alerts without unlocking their phones.</li>
+      <li>Utilized Google Maps API for real-time navigation, showing nearby safe locations and route guidance.</li>
+      <li>Enabled emergency contact management, allowing users to save, edit, and access trusted contacts quickly.</li>
+      <li>Designed an intuitive user interface (UI/UX) for seamless accessibility and usability.</li>
+      <li>Ensured secure data storage using SQLite, preventing unauthorized access to emergency information.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Soft skills</h2>
+    <p>Communication skills &nbsp; Public speaking &nbsp; Team management &nbsp; Team leading &nbsp; Quick Learner &nbsp; Adaptability</p>
+  </section>
+
+  <section>
+    <h2>Achievements</h2>
+    <ul>
+      <li>Mar 2022 &nbsp; Golden Badge- Problem Solving, Hackerrank</li>
+      <li>Sep 2022 &nbsp; Domain Specific Placement-2nd Rank, Walchand Institue Of Technology Solapur</li>
+      <li>Sep 2022 &nbsp; Engineers Day Aptitude competition, Walchand institute of technology Solapur — Bagged first position</li>
+      <li>Jun 2023 &nbsp; University Level article writing, punyashlok ahilyadevi holkar puraskar — Bagged first position</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certificates</h2>
+    <p>Java Certification &nbsp; Hackerrank Problem Solving (Basic) Certificate &nbsp; Hackerrank &nbsp; Python (Basic) Certification &nbsp; SQL(Basics) &nbsp; Hackerrank</p>
+  </section>
+
 </body>
 </html>
